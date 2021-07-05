@@ -1,0 +1,16 @@
+package KeyValueStorage
+
+type (
+	// IStorage Interface of thread safe key-value storage
+	IStorage interface {
+		// AddValue Adds value associated with key in storage
+		AddValue(interface{}, interface{}) interface{}
+		// ReadValue Reads value by key from storage
+		ReadValue(interface{}) interface{}
+		// UpdateValue Updates value associated with key in storage
+		UpdateValue(interface{}, interface{}) interface{}
+		// DeleteValue Deletes key and associated value from storage
+		DeleteValue(interface{})
+	}
+)
+
